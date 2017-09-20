@@ -13,11 +13,11 @@ public class EmailValidator
             // Loops to go through array and validate data          
             for(int i = 0; i < emails.Length;i++)
             {
-                   EmailValidator(emails[i]);
+                   Validate(emails[i]);
             }
         }
         
-        public static void EmailValidator(string email)
+        public static void Validate(string email)
         {
             string PATTERN = @"\S{1,}" + // Minimum of 1 non-whitespace character
                              "@" + // @ symbol
